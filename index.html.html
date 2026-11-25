@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Mister Busy 🎂💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #142f4e;
+      --ink-soft: #284e78;
+      --accent-blue: #4684c7;
+      --deep-blue: #1a4778;
+      --card-bg: rgba(255, 255, 255, 0.86);
+      --card-border: rgba(135, 184, 234, 0.72);
+      --shadow: 0 18px 45px rgba(20, 47, 78, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--ink);
+      background-color: #f7fbff;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22320%22%20height%3D%22320%22%20viewBox%3D%220%200%20320%20320%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22ribGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c8e1fa%22%20stop-opacity%3D%220.72%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23a8ccf2%22%20stop-opacity%3D%220.58%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23dcebfa%22%20stop-opacity%3D%220.72%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22heartGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239dc7f2%22%20stop-opacity%3D%220.72%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237fb2e8%22%20stop-opacity%3D%220.58%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22320%22%20height%3D%22320%22%20fill%3D%22%23f7fbff%22/%3E%0A%0A%20%20%3C%21--%20Bow%201%20%28top-left%29%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%2876%2C%2078%29%20rotate%28-14%29%22%3E%0A%20%20%20%20%3C%21--%20Tails%20--%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%206%20Q%20-18%2034%20-28%2054%20L%20-14%2057%20Q%20-4%2036%204%2012%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.2%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%204%206%20Q%2022%2034%2034%2052%20L%2020%2056%20Q%2010%2035%200%2012%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.2%22/%3E%0A%20%20%20%20%3C%21--%20Left%20loop%20--%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20-2%200%20C%20-34%20-28%20-52%2014%20-18%2022%20C%20-8%2024%20-2%2012%200%204%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.3%22/%3E%0A%20%20%20%20%3C%21--%20Right%20loop%20--%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%204%200%20C%2036%20-28%2054%2014%2020%2022%20C%2010%2024%204%2012%202%204%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.3%22/%3E%0A%20%20%20%20%3C%21--%20Center%20knot%20--%3E%0A%20%20%20%20%3Crect%20x%3D%22-6%22%20y%3D%22-5%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%225%22%20fill%3D%22%23b4d5f6%22%20stroke%3D%22%238eb8e6%22%20stroke-width%3D%221.2%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C%21--%20Bow%202%20%28bottom-right%29%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%28238%2C%20236%29%20rotate%2812%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%206%20Q%20-16%2032%20-26%2052%20L%20-13%2055%20Q%20-4%2035%204%2012%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.2%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%204%206%20Q%2020%2032%2032%2050%20L%2019%2054%20Q%2010%2034%200%2012%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.2%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%20-2%200%20C%20-34%20-28%20-52%2014%20-18%2022%20C%20-8%2024%20-2%2012%200%204%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.3%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%204%200%20C%2036%20-28%2054%2014%2020%2022%20C%2010%2024%204%2012%202%204%20Z%22%20fill%3D%22url%28%23ribGrad%29%22%20stroke%3D%22%239ac2ec%22%20stroke-width%3D%221.3%22/%3E%0A%20%20%20%20%3Crect%20x%3D%22-6%22%20y%3D%22-5%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%225%22%20fill%3D%22%23b4d5f6%22%20stroke%3D%22%238eb8e6%22%20stroke-width%3D%221.2%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C%21--%20Soft%20Blue%20Hearts%20scattered%20--%3E%0A%20%20%3C%21--%20Heart%201%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%28198%2C%2066%29%20rotate%2816%29%20scale%280.85%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%2018%20C%20-18%204%20-24%20-14%20-10%20-20%20C%20-3%20-23%200%20-16%200%20-13%20C%200%20-16%203%20-23%2010%20-20%20C%2024%20-14%2018%204%200%2018%20Z%22%20fill%3D%22url%28%23heartGrad%29%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3C%21--%20Heart%202%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%2864%2C%20224%29%20rotate%28-18%29%20scale%280.95%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%2018%20C%20-18%204%20-24%20-14%20-10%20-20%20C%20-3%20-23%200%20-16%200%20-13%20C%200%20-16%203%20-23%2010%20-20%20C%2024%20-14%2018%204%200%2018%20Z%22%20fill%3D%22url%28%23heartGrad%29%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3C%21--%20Heart%203%20%28small%20center-right%29%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%28162%2C%20156%29%20rotate%288%29%20scale%280.55%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%2018%20C%20-18%204%20-24%20-14%20-10%20-20%20C%20-3%20-23%200%20-16%200%20-13%20C%200%20-16%203%20-23%2010%20-20%20C%2024%20-14%2018%204%200%2018%20Z%22%20fill%3D%22url%28%23heartGrad%29%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3C%21--%20Heart%204%20%28small%20top-right%20edge%29%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%28292%2C%20118%29%20rotate%28-12%29%20scale%280.6%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%2018%20C%20-18%204%20-24%20-14%20-10%20-20%20C%20-3%20-23%200%20-16%200%20-13%20C%200%20-16%203%20-23%2010%20-20%20C%2024%20-14%2018%204%200%2018%20Z%22%20fill%3D%22url%28%23heartGrad%29%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3C%21--%20Heart%205%20%28small%20bottom-left%20edge%29%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%28152%2C%20286%29%20rotate%2814%29%20scale%280.55%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M%200%2018%20C%20-18%204%20-24%20-14%20-10%20-20%20C%20-3%20-23%200%20-16%200%20-13%20C%200%20-16%203%20-23%2010%20-20%20C%2024%20-14%2018%204%200%2018%20Z%22%20fill%3D%22url%28%23heartGrad%29%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 320px 320px;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px 52px;
+    }
+
+    .progress-wrap {
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      display: flex;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(8px);
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 6px 20px rgba(20, 47, 78, 0.1);
+    }
+
+    .step-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(70, 132, 199, 0.25);
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .step-dot.active {
+      width: 24px;
+      border-radius: 999px;
+      background: var(--accent-blue);
+    }
+
+    .stage {
+      width: 100%;
+      max-width: 720px;
+      margin-top: 38px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .page {
+      display: none;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      animation: fadeSlideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-title {
+      font-family: 'Great Vibes', 'Alex Brush', cursive;
+      font-size: clamp(2.6rem, 7vw, 4.1rem);
+      color: var(--deep-blue);
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: clamp(1.12rem, 2.8vw, 1.35rem);
+      font-style: italic;
+      color: var(--ink-soft);
+      margin-bottom: 24px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .btn {
+      font-family: 'Great Vibes', 'Alex Brush', cursive;
+      font-size: 1.6rem;
+      padding: 8px 30px;
+      border-radius: 999px;
+      border: 1px solid rgba(70, 132, 199, 0.55);
+      background: linear-gradient(135deg, #6fa6e0 0%, #3875b8 100%);
+      color: #ffffff;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(56, 117, 184, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(56, 117, 184, 0.36);
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--deep-blue);
+      box-shadow: 0 6px 16px rgba(20, 47, 78, 0.08);
+    }
+
+    .cake-scene {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 12px 0 18px;
+    }
+
+    .cake-wrap {
+      position: relative;
+      width: 270px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .candles {
+      display: flex;
+      gap: 18px;
+      margin-bottom: -4px;
+      z-index: 6;
+    }
+
+    .candle {
+      width: 11px;
+      height: 46px;
+      border-radius: 6px;
+      background: repeating-linear-gradient(
+        45deg,
+        #fffdf7,
+        #fffdf7 5px,
+        #d4af37 5px,
+        #d4af37 10px
+      );
+      position: relative;
+      box-shadow: 0 3px 8px rgba(20, 47, 78, 0.2);
+    }
+
+    .flame {
+      width: 15px;
+      height: 24px;
+      background: radial-gradient(circle at 50% 72%, #fffbe0 15%, #ffb838 55%, #ff5e3a 100%);
+      border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+      position: absolute;
+      top: -25px;
+      left: -2px;
+      transform-origin: bottom center;
+      animation: flicker 0.32s infinite alternate;
+      box-shadow: 0 0 16px rgba(255, 184, 56, 0.9);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .flame.blown {
+      opacity: 0;
+      transform: scale(0.15) translateY(-10px);
+      animation: none;
+    }
+
+    @keyframes flicker {
+      0% { transform: rotate(-4deg) scale(1); }
+      100% { transform: rotate(4deg) scale(1.08); }
+    }
+
+    .cake-tier-top {
+      width: 164px;
+      height: 66px;
+      background: linear-gradient(180deg, #ffffff 0%, #edf5fd 65%, #dbebfa 100%);
+      border-radius: 18px 18px 8px 8px;
+      border: 1px solid rgba(130, 180, 230, 0.6);
+      position: relative;
+      z-index: 4;
+      box-shadow: inset 0 -6px 14px rgba(110, 165, 220, 0.25);
+    }
+
+    .cake-ribbon-top {
+      position: absolute;
+      top: 22px;
+      left: -6px;
+      right: -6px;
+      height: 18px;
+      background: linear-gradient(90deg, #7db5eb 0%, #a8d0f5 50%, #7db5eb 100%);
+      border-radius: 6px;
+      box-shadow: 0 3px 8px rgba(48, 108, 173, 0.28);
+    }
+
+    .cake-tier-bottom {
+      width: 230px;
+      height: 82px;
+      background: linear-gradient(180deg, #fafdff 0%, #e4f0fb 65%, #cfe4f7 100%);
+      border-radius: 16px 16px 12px 12px;
+      border: 1px solid rgba(130, 180, 230, 0.65);
+      margin-top: -4px;
+      position: relative;
+      z-index: 3;
+      box-shadow: 0 10px 22px rgba(26, 71, 120, 0.14);
+    }
+
+    .cake-ribbon-bottom {
+      position: absolute;
+      bottom: 16px;
+      left: -8px;
+      right: -8px;
+      height: 16px;
+      background: linear-gradient(90deg, #8ec0ee 0%, #b9daf8 50%, #8ec0ee 100%);
+      border-radius: 6px;
+      box-shadow: 0 3px 8px rgba(48, 108, 173, 0.22);
+    }
+
+    .cake-stand {
+      width: 254px;
+      height: 16px;
+      background: linear-gradient(90deg, #bcd9f4 0%, #eef6fd 50%, #bcd9f4 100%);
+      border-radius: 999px;
+      margin-top: -2px;
+      z-index: 2;
+      box-shadow: 0 8px 18px rgba(20, 47, 78, 0.15);
+    }
+
+    .cake-pedestal {
+      width: 96px;
+      height: 14px;
+      background: linear-gradient(180deg, #d7e9f9 0%, #b3d2ef 100%);
+      border-radius: 0 0 14px 14px;
+      z-index: 1;
+    }
+
+    .wish-input-box {
+      width: 100%;
+      max-width: 440px;
+      margin: 14px auto 0;
+      display: none;
+      text-align: center;
+    }
+
+    .wish-input-box.show {
+      display: block;
+      animation: fadeSlideIn 0.4s ease;
+    }
+
+    .wish-input-box input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(70, 132, 199, 0.48);
+      background: rgba(255, 255, 255, 0.95);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      color: var(--ink);
+      outline: none;
+      margin-top: 8px;
+    }
+
+    .letter-text {
+      font-size: clamp(1.12rem, 2.5vw, 1.28rem);
+      line-height: 1.72;
+      color: var(--ink);
+      white-space: pre-line;
+    }
+
+    .advice-box {
+      background: rgba(238, 246, 255, 0.9);
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+
+    .ps-note {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(70, 132, 199, 0.45);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--deep-blue);
+    }
+
+    .emotional-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(232,244,255,0.9));
+      border: 1px solid rgba(125, 178, 232, 0.65);
+      border-radius: 22px;
+      padding: 26px 22px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .quiz-block {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .quiz-q {
+      font-size: 1.22rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--deep-blue);
+    }
+
+    .option-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .opt-btn {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(70, 132, 199, 0.55);
+      background: #ffffff;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .opt-btn:hover, .opt-btn.selected {
+      background: var(--accent-blue);
+      color: #ffffff;
+    }
+
+    .quiz-reply {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 1.12rem;
+      color: var(--deep-blue);
+      min-height: 24px;
+    }
+
+    .seal-box {
+      text-align: center;
+      padding: 28px 18px;
+      border: 2px dashed rgba(70, 132, 199, 0.58);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .revealed-compliment {
+      display: none;
+      margin-top: 18px;
+      text-align: left;
+      animation: fadeSlideIn 0.5s ease;
+    }
+
+    .revealed-compliment.open {
+      display: block;
+    }
+
+    .ending-box {
+      text-align: center;
+      padding: 16px 10px;
+    }
+
+    .prayer-line {
+      font-family: 'Great Vibes', 'Alex Brush', cursive;
+      font-size: clamp(1.9rem, 5vw, 2.85rem);
+      color: var(--deep-blue);
+      line-height: 1.3;
+      margin: 18px 0 24px;
+      font-weight: 400;
+    }
+
+    .floating-heart {
+      position: fixed;
+      bottom: -24px;
+      pointer-events: none;
+      z-index: 5;
+      animation: floatUp linear forwards;
+      opacity: 0.72;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(0.85);
+        opacity: 0.75;
+      }
+      100% {
+        transform: translateY(-105vh) scale(1.15);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="progress-wrap" aria-label="Birthday journey steps">
+    <button class="step-dot active" onclick="goToPage(0)" title="Start"></button>
+    <button class="step-dot" onclick="goToPage(1)" title="Cake & Wish"></button>
+    <button class="step-dot" onclick="goToPage(2)" title="Birthday Letter"></button>
+    <button class="step-dot" onclick="goToPage(3)" title="Sofa Advice"></button>
+    <button class="step-dot" onclick="goToPage(4)" title="Miss You & Quiz"></button>
+    <button class="step-dot" onclick="goToPage(5)" title="Secret Compliment"></button>
+    <button class="step-dot" onclick="goToPage(6)" title="Final Blessing"></button>
+  </nav>
+
+  <main class="stage">
+    <section class="page active" id="page-0">
+      <h1 class="hero-title">Happy Birthday, Mister Busy</h1>
+      <p class="subtitle">Pause your busy schedule for just a few minutes—this little world is all yours today.</p>
+      <div class="btn-row">
+        <button class="btn" onclick="goToPage(1)">Open Your Surprise</button>
+      </div>
+    </section>
+
+    <section class="page" id="page-1">
+      <h2 class="hero-title">Make a Wish &amp; Blow the Candles</h2>
+      <p class="subtitle" id="cake-status">Tap below to blow out the candles and whisper your birthday wish.</p>
+
+      <div class="cake-scene">
+        <div class="cake-wrap">
+          <div class="candles">
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+          </div>
+          <div class="cake-tier-top">
+            <div class="cake-ribbon-top"></div>
+          </div>
+          <div class="cake-tier-bottom">
+            <div class="cake-ribbon-bottom"></div>
+          </div>
+          <div class="cake-stand"></div>
+          <div class="cake-pedestal"></div>
+        </div>
+
+        <div class="wish-input-box" id="wish-box">
+          <label for="secret-wish" class="hero-title" style="font-size: 1.75rem; display:block; margin-bottom:4px;">
+            Write or keep your wish in your heart:
+          </label>
+          <input type="text" id="secret-wish" placeholder="Type your birthday wish here (optional)..." />
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn" id="blow-btn" onclick="blowCandles()">Blow Candles</button>
+        <button class="btn secondary" id="relight-btn" onclick="relightCandles()" style="display:none;">Relight</button>
+        <button class="btn" onclick="goToPage(2)">Next</button>
+      </div>
+    </section>
+
+    <section class="page" id="page-2">
+      <h2 class="hero-title">From My Heart to Yours</h2>
+      <div class="letter-text">Happy birthday 🎂 to the most favorite person of my life and busiest person 👊🏼😂
+I don't know where to begin, but I have so many things to say—so much that I've never actually said before or told you about, though you probably figured it out on your own.
+Well, since it's your birthday today, I figured it's my duty to praise you a little, to tell you how you are and what you mean to me. 💗🤭
+Honestly, I get angry with you more than I should sometimes, but I know very well that the anger is only temporary, and the love comes right back after. I know no one is perfect; every person has some flaws. That's why, however you are and whatever you are, you are perfect for me. I have no need to change you. True love is about freedom, not keeping someone captive.
+In my full senses and sound mind, I, Sidra, confess to you: the way I have loved you, the place I have given you in my life and in my heart—no one else has ever reached there, and no one ever will. There is no looking back; the destination ahead is with you. And if you aren't there, I would close every door leading toward my heart myself, because I fell in love with you when I wasn't even looking to fall in love with anyone. 🥹
+Everything changes around here, but when I wasn't even searching, you came into my life—thank you so much for that. Thank you for tolerating my anger, my talks, our fights, and my mood swings, my jaan. I want you to stay happy—not just happy, but extremely, wonderfully happy. Remember my words: no matter what happens, whether anyone else is there or not, I will always stand right by your side, mister busy ❤️.
+And yeah, you are pretty good too 😂💗, not bad at all—I guess I can manage to live life fighting with you! Well, of course, I can't stop doing that, because a day doesn't even pass without it, jaan.
+I love you so much, you grumpy soul 🤭.
+If I started telling you everything, this would get way too long, so I'll tell you the rest when we sit face-to-face, januuu 💕💋.
+Happy Birthday! 👊🏼♥️</div>
+      <div class="btn-row">
+        <button class="btn secondary" onclick="goToPage(1)">Back</button>
+        <button class="btn" onclick="goToPage(3)">Continue</button>
+      </div>
+    </section>
+
+    <section class="page" id="page-3">
+      <h2 class="hero-title">A Very Serious Future Rule</h2>
+      <div class="advice-box">
+        <div class="letter-text">One most important piece of advice:
+Make sure to keep a sofa in the room after we get married, okay jaan? Because after a fight, you'll need somewhere to sleep—so that will be perfect, right? 😂♥️👊🏼</div>
+        <div class="ps-note">
+          P.S. Start saving up for a really good, comfortable sofa right now, bandar—so you can sleep peacefully there without complaining! 😂🛋️🐒
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn secondary" onclick="goToPage(2)">Back</button>
+        <button class="btn" onclick="goToPage(4)">Next</button>
+      </div>
+    </section>
+
+    <section class="page" id="page-4">
+      <h2 class="hero-title">Every Single Moment</h2>
+      <div class="emotional-card">
+        <div class="letter-text">I don't need a reason to miss you—I miss you in every moment, over every little thing. So let's put an end to this distance now, please? 🥺💕</div>
+      </div>
+
+      <div class="quiz-block">
+        <div class="quiz-q">1. After a fight, who says "Sorry" first?</div>
+        <div class="option-list">
+          <button class="opt-btn" onclick="answerQ(1, this, 'Obviously you, mister busy—especially when you want me to stop teasing you! 😂💗')">Me (obviously)</button>
+          <button class="opt-btn" onclick="answerQ(1, this, 'Aww, look at you pretending to surrender first—keep that energy for the sofa! 😜🛋️')">You (in your dreams)</button>
+          <button class="opt-btn" onclick="answerQ(1, this, 'True, we never stay mad for long, even if we act dramatic for five minutes! 🥺💕')">Neither, we both give in</button>
+        </div>
+        <div class="quiz-reply" id="reply-1"></div>
+      </div>
+
+      <div class="quiz-block">
+        <div class="quiz-q">2. Do you miss me?</div>
+        <div class="option-list">
+          <button class="opt-btn" onclick="answerQ(2, this, 'Only a little?! Careful, that answer might earn you a night on the sofa! 👊🏼😂')">A little bit</button>
+          <button class="opt-btn" onclick="answerQ(2, this, 'So much that even your busy schedule feels incomplete without me, right? 💗')">A lot</button>
+          <button class="opt-btn" onclick="answerQ(2, this, 'Every single second—and I feel every single one of those seconds too. 🥺💕')">Every single second</button>
+        </div>
+        <div class="quiz-reply" id="reply-2"></div>
+      </div>
+
+      <div class="quiz-block">
+        <div class="quiz-q">3. How much do you love your grumpy, fighting jaan?</div>
+        <div class="option-list">
+          <button class="opt-btn" onclick="answerQ(3, this, 'More than words, more than distance, and more than all your busy hours combined. ❤️')">More than words can say</button>
+          <button class="opt-btn" onclick="answerQ(3, this, 'Even on the days I test your patience to the limit—and still save a spot on the sofa! 😂🛋️')">Even when you drive me crazy</button>
+        </div>
+        <div class="quiz-reply" id="reply-3"></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn secondary" onclick="goToPage(3)">Back</button>
+        <button class="btn" onclick="goToPage(5)">Next</button>
+      </div>
+    </section>
+
+    <section class="page" id="page-5">
+      <h2 class="hero-title">A Sealed Secret Note</h2>
+      <div class="seal-box" id="seal-box">
+        <p class="subtitle" style="margin-bottom: 14px;">This compliment was kept tucked away—tap to unseal it.</p>
+        <button class="btn" id="unseal-btn" onclick="unsealCompliment()">Unseal Secret Compliment</button>
+
+        <div class="revealed-compliment" id="revealed-compliment">
+          <div class="letter-text">And who told you that you look good in black? Whoever saw you didn't look closely enough. I've observed and tested this myself—the way you look dressed in white, I don't think you could ever look that good in anything else.
+I've watched you very closely in it, jaan, and no one can look more handsome than you do in white—even though white isn't even my favorite color, until you wear it. Looking at you changes my entire theory.
+This is the bestest compliment from my side, and I'm telling you what's truly in my heart, even though I wasn't supposed to say it out loud. 🤍😭💋Stand in front of the mirror on my behalf and see for yourself too🙈</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn secondary" onclick="goToPage(4)">Back</button>
+        <button class="btn" onclick="goToPage(6)">Final Page</button>
+      </div>
+    </section>
+
+    <section class="page" id="page-6">
+      <div class="ending-box">
+        <h2 class="hero-title">Always &amp; Forever</h2>
+        <p class="prayer-line">
+          After your mama, I am the only one who prays for you before myself.
+        </p>
+        <p class="subtitle">
+          May Allah protect you, bless you with endless happiness, and keep you smiling always.
+        </p>
+        <p class="hero-title" style="font-size: clamp(2.1rem, 5.5vw, 3rem); margin-top: 14px;">
+          Forever yours, Your Jaan ❤️
+        </p>
+        <div class="btn-row">
+          <button class="btn secondary" onclick="goToPage(5)">Back</button>
+          <button class="btn" onclick="goToPage(0)">Start Over</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const pages = document.querySelectorAll('.page');
+    const dots = document.querySelectorAll('.step-dot');
+    let currentIndex = 0;
+
+    function goToPage(index) {
+      if (index < 0 || index >= pages.length) return;
+      pages[currentIndex].classList.remove('active');
+      dots[currentIndex].classList.remove('active');
+      currentIndex = index;
+      pages[currentIndex].classList.add('active');
+      dots[currentIndex].classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function blowCandles() {
+      const flames = document.querySelectorAll('.flame');
+      flames.forEach((f, i) => {
+        setTimeout(() => f.classList.add('blown'), i * 110);
+      });
+      document.getElementById('cake-status').textContent =
+        'Candles blown! Make your wish—may every single one come true.';
+      document.getElementById('wish-box').classList.add('show');
+      document.getElementById('blow-btn').style.display = 'none';
+      document.getElementById('relight-btn').style.display = 'inline-block';
+    }
+
+    function relightCandles() {
+      document.querySelectorAll('.flame').forEach(f => f.classList.remove('blown'));
+      document.getElementById('cake-status').textContent =
+        'Candles relit! Blow again whenever you are ready.';
+      document.getElementById('blow-btn').style.display = 'inline-block';
+      document.getElementById('relight-btn').style.display = 'none';
+    }
+
+    function answerQ(qNum, btnEl, replyText) {
+      const parent = btnEl.parentElement;
+      parent.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+      btnEl.classList.add('selected');
+      document.getElementById('reply-' + qNum).textContent = replyText;
+    }
+
+    function unsealCompliment() {
+      document.getElementById('revealed-compliment').classList.add('open');
+      document.getElementById('unseal-btn').style.display = 'none';
+    }
+
+    const heartChars = ['💙', '🤍', '💕', '✨'];
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.className = 'floating-heart';
+      heart.textContent = heartChars[Math.floor(Math.random() * heartChars.length)];
+      heart.style.left = Math.random() * 94 + 'vw';
+      heart.style.fontSize = (16 + Math.random() * 14) + 'px';
+      const dur = 5 + Math.random() * 4;
+      heart.style.animationDuration = dur + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), dur * 1000);
+    }, 1100);
+  </script>
+</body>
+</html>
